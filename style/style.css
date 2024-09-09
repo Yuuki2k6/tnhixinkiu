@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
@@ -50,7 +50,7 @@ body {
 
 .two {
   font-size: 1.2rem;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 .three {
@@ -124,7 +124,7 @@ body {
 
 .six .hat {
   position: absolute;
-  width: 80px;
+  width: 120px;
   top: -35px;
   left: 41.5%;
   /* transform: scale(0.1); */
@@ -217,19 +217,29 @@ body {
 }
 
 .wish h5 {
-  font-weight: lighter;
+  font-weight: normal;
   font-size: 2rem;
   margin: 10px 0 0;
 }
 
+.nine {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .nine p {
   font-size: 2rem;
-  font-weight: lighter;
+  font-weight: normal;
 }
 
 #replay {
   z-index: 3;
   cursor: pointer;
+  text-align: center;
+  border: 0px solid;
+  background: none;
+  outline: 0;
 }
 
 /* Media Queries */
@@ -280,7 +290,7 @@ body {
   }
 
   .six .hat {
-    width: 50px;
+    width: 100px;
     top: -20px;
   }
 
@@ -294,6 +304,6 @@ body {
 
   .nine p {
     font-size: 1.5rem;
-    font-weight: lighter;
+    font-weight: normal;
   }
 }
