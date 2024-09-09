@@ -24,6 +24,15 @@ const fetchData = () => {
     });
 };
 
+/*
+  manipulate wishHeading
+  fetch current date, calculate how many days it has been since 1st Jan 2024 and edit messsage.
+*/
+var time_l = new Date("Jan 01, 2024 00:00:00").getTime();
+var time_r = new Date().getTime();
+var diff = Math.floor((time_r - time_l) / (1000 * 60 * 60 * 24));
+document.getElementById("wishHeading").innerHTML = "Kỷ niệm " + diff + " ngày ở bên nhau!!!";
+
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
@@ -282,7 +291,7 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1"
     })
-    .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
+    .staggerFrom(".nine:not(last-smile)", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
       0.5,
